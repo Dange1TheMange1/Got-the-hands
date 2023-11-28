@@ -20,6 +20,9 @@ public class HandAnims : MonoBehaviour
     {
         //no need to debug it just works
         float pinchValue = pinchAnim.action.ReadValue<float>();
+        handAnim.SetFloat("Pinch", pinchValue);
+
         float grabValue = grabAnim.action.ReadValue<float>();
+        handAnim.SetFloat("Grab", grabValue);
     }
 }
